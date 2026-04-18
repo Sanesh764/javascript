@@ -4,3 +4,4 @@ for(let x of arr){
     console.log(arr[x]);
     
 }
+console.log("hellow orld")
