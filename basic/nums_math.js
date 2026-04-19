@@ -27,7 +27,6 @@ const hundred=100000000000
 // console.log(Math.min(-4,2));
 // console.log(Math.round(4.5));
 // console.log(Math.ceil(4.8));
-(
 console.log((Math.random()*10)+1)
 
 
