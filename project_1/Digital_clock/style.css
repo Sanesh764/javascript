@@ -1,0 +1,121 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 60px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#banner {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.clock {
+    font-size: 40px;
+    color: #e6b72c;
+    font-weight: bold;
+    letter-spacing: 2px;
+} */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400&display=swap');
+  .clock-wrap { padding: 2rem 0; display: flex; justify-content: center; }
+  .clock-card {
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    background: var(--color-background-primary);
+    padding: 2rem 2.5rem;
+    min-width: 300px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .location-label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    margin-bottom: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+  .time-display {
+    font-family: 'Space Mono', monospace;
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+  .time-display .colon {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+    opacity: 1;
+  }
+  @keyframes blink { 50% { opacity: 0.25; } }
+  .ampm {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+  .seconds-row {
+    display: flex; align-items: center; gap: 10px;
+    margin: 1rem 0 1.25rem;
+  }
+  .seconds-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    min-width: 22px;
+    text-align: right;
+  }
+  .seconds-bar-bg {
+    flex: 1;
+    height: 3px;
+    background: var(--color-background-secondary);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .seconds-bar-fill {
+    height: 100%;
+    background: var(--color-text-primary);
+    border-radius: 2px;
+    transition: width 0.9s linear;
+  }
+  .divider {
+    border: none;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    margin: 0 0 1rem;
+  }
+  .date-row {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .day-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+  .full-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--color-text-tertiary);
+  }

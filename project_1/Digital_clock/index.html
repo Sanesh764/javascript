@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-wrap">
+  <div class="clock-card">
+    <div class="location-label">Your local time</div>
+    <div class="time-display" id="time">--<span class="colon">:</span>--<span class="colon">:</span>--<span class="ampm" id="ampm"></span></div>
+    <div class="seconds-row">
+      <span class="seconds-label" id="sec-num">00</span>
+      <div class="seconds-bar-bg"><div class="seconds-bar-fill" id="sec-bar" style="width:0%"></div></div>
+    </div>
+    <hr class="divider">
+    <div class="date-row">
+      <span class="day-name" id="day-name">—</span>
+      <span class="full-date" id="full-date">—</span>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
