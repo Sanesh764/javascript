@@ -20,10 +20,8 @@
 // });
 
 const form = document.querySelector("form");
-
 form.addEventListener("submit", function (e) {
     e.preventDefault();
-
     const height = parseFloat(document.querySelector("#height").value);
     const weight = parseFloat(document.querySelector("#weight").value);
     const result = document.querySelector("#result"); // 
@@ -33,12 +31,10 @@ form.addEventListener("submit", function (e) {
         showResult(result, "Please enter a valid height (1 - 300 cm).", "error");
         return;
     }
-
     if (!weight || weight <= 0 || weight > 500) {
         showResult(result, "Please enter a valid weight (1 - 500 kg).", "error");
         return;
     }
-
     // BMI calculation
     const heightInMeters = height / 100;
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(2);
@@ -46,14 +42,12 @@ form.addEventListener("submit", function (e) {
 
     showResult(result, `Your BMI is <strong>${bmi}</strong> — ${category}`, cssClass);
 });
-
 function getCategory(bmi) {
     if (bmi < 18.5) return { category: "Underweight",     cssClass: "under"  };
     if (bmi < 25)   return { category: "Normal weight",   cssClass: "normal" };
     if (bmi < 30)   return { category: "Overweight",      cssClass: "over"   };
                     return { category: "Obese",            cssClass: "obese"  };
 }
-
 function showResult(el, message, cssClass) {
     el.innerHTML = message;
     el.className = cssClass; // CSS class swap for color change
