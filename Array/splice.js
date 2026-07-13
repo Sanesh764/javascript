@@ -25,6 +25,7 @@ fruits.splice(1,1,"tamatar");//index 1 pr jao 1 element delete karo or uske jaga
 console.log(fruits);
 
 fruits.splice(1,0,"licchi","pumkin","sushi");
+//multiple value we can insert
 console.log(fruits);
 
 
