@@ -16,3 +16,16 @@ function multiply(multiplyer,...numbers){
 console.log(multiply(2,1,2,3,4));
 
 
+
+function AddToCart(user,...items){
+    console.log(`${user} added:`);
+    console.log(items);      
+}
+AddToCart(
+    "sanesh",
+    "laptop",
+    "mouse",
+    "keyboard",
+    "headphones"
+);
+
