@@ -6,6 +6,11 @@
 
 //textContent
 
+// const h1 = document.querySelector("#h1");
+// console.log(h1.textContent);
+// h1.textContent = "<b>Sanesh</b>";
+
+//innerText
 const h1 = document.querySelector("#h1");
-console.log(h1.textContent);
-h1.textContent = "<b>Sanesh</b>";
+console.log(h1.innerText);
+h1.innerText = "<b>Sanesh</b>";
