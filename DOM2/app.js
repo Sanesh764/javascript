@@ -32,7 +32,16 @@ const button=document.createElement("button");
 button.innerText="click me";
 document.body.appendChild(button);
 
-button.addEventListener("click",()=>{
+const input=document.createElement("input");
+input.innerText="this is our input field";
+document.body.appendChild(input);
+
+input.addEventListener("input",(e)=>{
+    console.log(e.target.value);
+    
+})
+
+button.addEventListener("click",(e)=>{
     console.log("button was clicked");
     
 })
