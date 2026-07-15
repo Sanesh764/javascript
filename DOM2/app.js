@@ -48,3 +48,19 @@ button.addEventListener("click",(e)=>{
 
 h2.innerText="mai hu code karne wla balak";
 old.replaceWith(h2);
+
+
+//evnet bubbling
+
+const parent=document.querySelector("#parent");
+const child=document.querySelector("#child");
+
+parent.addEventListener("click",()=>{
+    console.log("parent was click");//output parent was click
+})
+
+child.addEventListener("click",(e)=>{
+    e.stopPropagation();//ye isliye use kiye ki parent click na ho
+    console.log("child was click");
+    
+})
